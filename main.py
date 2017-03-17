@@ -109,8 +109,8 @@ def test_quasi():
     print "kms"
 
 def test_final():
-    staticPage = 'http://opensensingcity.emse.fr/tuba/data/static-rdf/nantes/nantes.parking.ttl'
-    dynamicPage = 'http://opensensingcity.emse.fr/sparql-generate/api/transform?queryurl=http%3A%2F%2Fopensensingcity.emse.fr%2Ftuba%2Fquery%2Fnantes.parking1.rqg'
+    staticPage = 'http://opensensingcity.emse.fr/tuba/data/static-rdf/strasbourg/strasbourg.parking.geometry.ttl'
+    dynamicPage = 'http://opensensingcity.emse.fr/sparql-generate/api/transform?queryurl=http%3A%2F%2Fopensensingcity.emse.fr%2Ftuba%2Fquery%2Fstrasbourg.parking1.rqg'
     pk = Namespace("http://opensensingcity.emse.fr/ontologies/parking/")
 
     graphStatic=rdflib.Graph()
@@ -122,13 +122,17 @@ def test_final():
     graph = graphDynamic + graphStatic
 
     geolocator = geopy.geocoders.Nominatim()
-    location = geolocator.geocode("27 Boulevard de Stalingrad, 44000 Nantes, France")
+    #location = geolocator.geocode("27 Boulevard de Stalingrad, 44000 Nantes, France")
+    location = geolocator.geocode("Strasbourg")
+    location = geolocator.geocode("Parc de l'Orangerie, 67000 Strasbourg, France")
+
     print((location.latitude, location.longitude))
 
     distanceMin = 9999999999
     best_label = "LABEL"
 
-    for s, p, o in graph.triples((None, RDF.type, pk.ParkingPlace)):
+    for s, p, o in graph.triples((None, RDF.type, pk.ParkingFacility)):
+        #print s,p,o
         long = 0.000000
         lat = 0.000000
         label = ""
