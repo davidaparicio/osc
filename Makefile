@@ -1,23 +1,21 @@
 # Makefile: Tools to help you install the OSC on MacOS/Ubuntu/Debian.
 # Copyright © 2017 APARICIOs. All rights reserved.
-# The following code is covered by the AGPL-3.0 license.
 
 ### READ THIS ###
-
-# Install necessary files, npm modules, and certificates.
+# Install necessary files, PyPi modules
 install: pypi welcome
 
 start: stop
 	python main.py
-	#node app >> janitor.log 2>&1 & [ $$! -ne "0" ] && printf "$$!\n" > janitor.pid
 
 stop:
 
+run: start
 
 ### PyPi DEPENDENCIES ###
 # Install PyPi dependencies.
 pypi:
-	pip install -r requirements.txt
+	pip install -r requirements.txt --user
 
 ### HELP ###
 # Welcome and guide the user.
@@ -33,4 +31,4 @@ welcome:
 help:
 	cat Makefile | less
 
-.PHONY: install start stop welcome help
+.PHONY: install start stop run pypi welcome help
