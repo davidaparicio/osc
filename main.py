@@ -1,12 +1,14 @@
 import requests
 
+def test_requests():
+    request = requests.get('https://google.com')
+    print request.status_code
+    #print request.content
+    return request.status_code
+
 def main():
-    print 'Hello, world!'
-    flag = requests.get('https://lemni.top/')
-    # print flag.status_code
-    print flag.content
-    r = requests.post('https://lemni.top/submit.php', data={'flag': 'flag{salut_python}'})
-    print r.content
+    print "Hello, OpenSensingCity"
+    #test_requests()
 
 if __name__ == '__main__':
     main()

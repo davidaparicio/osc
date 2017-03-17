@@ -1,7 +1,8 @@
-#Project made for Python2.7
+# Project made for Python2.7
 requests >= 2.13.0
 rdflib >= 4.2.2
 geopy >= 1.11.0
 
-#Foo >= 1.2
-#PickyThing <1.6,>1.9,!=1.9.6,<2.0a0,==2.4c1
+# Foo >= 1.2
+# PickyThing <1.6,>1.9,!=1.9.6,<2.0a0,==2.4c1
+# pip freeze | grep <module>
