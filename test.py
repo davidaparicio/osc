@@ -8,6 +8,8 @@ dynamicPage = 'http://opensensingcity.emse.fr/sparql-generate/api/transform?quer
 
 def main():
 
+    pk = Namespace("http://opensensingcity.emse.fr/ontologies/parking/")
+
     graphStatic=rdflib.Graph()
     graphStatic.load(staticPage, format='n3');
 
@@ -39,7 +41,7 @@ def main():
     #     print(row.parking)
     #     print type(row.parking)
     print "For"
-    for s,p,o in graph.subjects(RDF.type,'pk:ParkingFacility'):
+    for s,p,o in graph.triples((None,RDF.type,pk.ParkingPlace)):
         print "%s is a parking"%s
 
     #    print type(row.predicat)
