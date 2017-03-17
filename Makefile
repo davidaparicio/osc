@@ -12,6 +12,9 @@ stop:
 
 run: start
 
+test:
+	python main_test.py
+
 ### PyPi DEPENDENCIES ###
 # Install PyPi dependencies.
 pypi:
@@ -31,4 +34,4 @@ welcome:
 help:
 	cat Makefile | less
 
-.PHONY: install start stop run pypi welcome help
+.PHONY: install start stop run test pypi welcome help
