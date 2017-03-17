@@ -1,0 +1,6 @@
+#Project made for Python2.7
+requests
+rdflib
+
+#Foo >= 1.2
+#PickyThing <1.6,>1.9,!=1.9.6,<2.0a0,==2.4c1
