@@ -1,0 +1,232 @@
+@base          <http://example.org/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://w3id.org/sparql-generate/fn/> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pk:    <http://opensensingcity.emse.fr/ontologies/parking/> .
+@prefix ts:    <http://opensensingcity.emse.fr/ontologies/tempstatus> .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/7>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  450 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  65 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/1>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  3280 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  0 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/14>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  496 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  68 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/27>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  251 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  119 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/21>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  464 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  130 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/6>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  229 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  171 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/19>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  278 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  125 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/13>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  534 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  206 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/26>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  170 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  157 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/20>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  180 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  58 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/5>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  600 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  394 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/18>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  570 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  86 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/12>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  467 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  239 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/25>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  100 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  20 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/4>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  460 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  294 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/17>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  986 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  410 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/11>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  233 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  49 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/24>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  340 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  154 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/9>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  557 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  192 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/3>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  437 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  83 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/16>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  185 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  152 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/10>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  955 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  356 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/23>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  1132 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  867 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/8>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  188 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  111 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/2>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  267 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  141 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/15>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  147 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  75 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/28>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  800 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  448 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/22>
+        a                      pk:ParkingFacility ;
+        pk:nbCarParkingPlaces  1211 ;
+        ts:hasAvailability     [ a                       ts:Availability ;
+                                 pk:nbOfAvailablePlaces  822 ;
+                                 ts:time                 "2017-03-17T11:39:00"^^xsd:dateTime
+                               ] .

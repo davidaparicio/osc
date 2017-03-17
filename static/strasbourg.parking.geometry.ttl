@@ -1,0 +1,154 @@
+se          <http://example.org/> .
+@prefix dt:    <http://opensensingcity.emse.fr/datatypes/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:    <http://example.org/> .
+@prefix shw:   <http://paul.staroch.name/thesis/SmartHomeWeather.owl#> .
+@prefix wo:    <http://opensensingcity.emse.fr/ontologies/weather/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://w3id.org/sparql-generate/fn/> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pk:    <http://opensensingcity.emse.fr/ontologies/parking/> .
+@prefix aqo:   <http://opensensingcity.emse.fr/ontologies/airQuality/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix ts:    <http://opensensingcity.emse.fr/ontologies/tempstatus> .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/14>
+        a         pk:ParkingFacility ;
+        geo:lat   48.586809981656e0 ;
+        geo:long  7.7421753086292e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/23>
+        a         pk:ParkingFacility ;
+        geo:lat   48.573302877444e0 ;
+        geo:long  7.75986165784e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/4>
+        a         pk:ParkingFacility ;
+        geo:lat   48.544666689216e0 ;
+        geo:long  7.7357170060558e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/13>
+        a         pk:ParkingFacility ;
+        geo:lat   48.587382025277e0 ;
+        geo:long  7.7393981966122e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/19>
+        a         pk:ParkingFacility ;
+        geo:lat   48.575596236791e0 ;
+        geo:long  7.7495498065752e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/28>
+        a         pk:ParkingFacility ;
+        geo:lat   48.591994827584e0 ;
+        geo:long  7.7089293781206e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/22>
+        a         pk:ParkingFacility ;
+        geo:lat   48.587980902672e0 ;
+        geo:long  7.7401721171329e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/3>
+        a         pk:ParkingFacility ;
+        geo:lat   48.585709051829e0 ;
+        geo:long  7.7492982398206e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/9>
+        a         pk:ParkingFacility ;
+        geo:lat   48.582569952868e0 ;
+        geo:long  7.732298446108e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/12>
+        a         pk:ParkingFacility ;
+        geo:lat   48.583517328227e0 ;
+        geo:long  7.7450861941687e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/18>
+        a         pk:ParkingFacility ;
+        geo:lat   48.59965226758e0 ;
+        geo:long  7.7538341527375e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/2>
+        a         pk:ParkingFacility ;
+        geo:lat   48.581022231305e0 ;
+        geo:long  7.7560718846503e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/21>
+        a         pk:ParkingFacility ;
+        geo:lat   48.577983703213e0 ;
+        geo:long  7.7518193637828e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/27>
+        a         pk:ParkingFacility ;
+        geo:lat   48.578155375998e0 ;
+        geo:long  7.7701185540929e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/8>
+        a         pk:ParkingFacility ;
+        geo:lat   48.584348647673e0 ;
+        geo:long  7.7358996043246e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/11>
+        a         pk:ParkingFacility ;
+        geo:lat   48.581580518695e0 ;
+        geo:long  7.7483083177206e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/17>
+        a         pk:ParkingFacility ;
+        geo:lat   48.579217731825e0 ;
+        geo:long  7.7352819361934e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/1>
+        a         pk:ParkingFacility ;
+        geo:lat   48.595356088816e0 ;
+        geo:long  7.6864908398663e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/20>
+        a         pk:ParkingFacility ;
+        geo:lat   48.583164295422e0 ;
+        geo:long  7.7436539305255e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/26>
+        a         pk:ParkingFacility ;
+        geo:lat   48.617262598194e0 ;
+        geo:long  7.7171077461119e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/7>
+        a         pk:ParkingFacility ;
+        geo:lat   48.591246691853e0 ;
+        geo:long  7.7261244781828e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/10>
+        a         pk:ParkingFacility ;
+        geo:lat   48.587404610082e0 ;
+        geo:long  7.7367944360291e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/16>
+        a         pk:ParkingFacility ;
+        geo:lat   48.561266328186e0 ;
+        geo:long  7.7503107890667e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/25>
+        a         pk:ParkingFacility ;
+        geo:lat   48.58443862829e0 ;
+        geo:long  7.6901675914862e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/6>
+        a         pk:ParkingFacility ;
+        geo:lat   48.568423410324e0 ;
+        geo:long  7.7303334473801e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/15>
+        a         pk:ParkingFacility ;
+        geo:lat   48.597991218276e0 ;
+        geo:long  7.7765869683922e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/24>
+        a         pk:ParkingFacility ;
+        geo:lat   48.627908710595e0 ;
+        geo:long  7.7578100435952e0 .
+
+<http://opensensingcity.emse.fr/strasbourg/parkings/5>
+        a         pk:ParkingFacility ;
+        geo:lat   48.589259018104e0 ;
+        geo:long  7.7159903608557e0 .

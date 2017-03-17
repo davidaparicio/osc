@@ -1,0 +1,195 @@
+
+
+# Ontology partially based on data from Grand Lyon Smart Data platform, data from Strasbourg open data platform:
+# https://download.data.grandlyon.com/ws/grandlyon/pvo_patrimoine_voirie.pvoparking/all.json
+# http://strasmap.eu/remote.amf.json/Parking.geometry
+# 
+
+@prefix :     <http://opensensingcity.emse.fr/ontologies/parking/> .
+@prefix cc:   <http://creativecommons.org/ns#> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gr:   <http://purl.org/goodrelations/v1#> .
+@prefix igeo: <http://rdf.insee.fr/def/geo#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix topo: <http://data.ign.fr/def/topo> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+###################
+# Ontology description #
+###################
+:  a  owl:Ontology;
+    cc:license <http://creativecommons.org/licenses/publicdomain/zero/1.0/>;
+    dc:creator  <http://zimmer.aprilfoolsreview.com/antoine#me>, <http://nooranibakerally.com/#me>;
+    dc:description  "This is an ontology for parking spaces."@en, ""@fr;
+    dc:issued  "2015-12-09T10:42:42+01:00"^^xsd:dateTime;
+    dc:modified "2015-12-14T15:45:42+01:00"^^xsd:dateTime;
+    rdfs:comment  "This ontology reuses terms from other existing ontologies, but does not import them."@en, ""@fr;
+    rdfs:label  "parking ontology"@en, "ontologie des parkings"@fr.
+    
+####################
+# Annotation properties #
+####################
+cc:license  a  owl:AnnotationProperty .
+dc:creator  a  owl:AnnotationProperty .
+dc:issued  a  owl:AnnotationProperty .
+dc:modified  a  owl:AnnotationProperty .
+
+##################
+# Datatype properties #
+##################
+:nbParkingSpaces  a  owl:DatatypeProperty;
+    rdfs:label "number of parking spaces"@en, "nombre de places de stationnement"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+
+:nbDisabledParkingPlaces  a  owl:DatatypeProperty;
+    rdfs:label "number of disabled parking places"@en, "nombre de places de stationnement handicapé"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+
+:nbCarParkingPlaces  a  owl:DatatypeProperty;
+    rdfs:label "number of car parking places"@en, "nombre de places de stationnement pour voiture"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+    
+:nbTruckParkingPlaces  a  owl:DatatypeProperty;
+    rdfs:label "number of truck parking places"@en, "nombre de places de stationnement pour camion"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+
+:nbBicycleParkingPlaces  a  owl:DatatypeProperty;
+    rdfs:label "number of bicycle parking places"@en, "nombre de places de stationnement pour vélo"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+
+:nbMotorcycleParkingPlaces  a  owl:DatatypeProperty;
+    rdfs:label "number of motorcycle parking places"@en, "nombre de places de stationnement pour moto"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  xsd:nonNegativeInteger .
+    
+:nbStoreys  a  owl:DatatypeProperty;
+    rdfs:label "number of storeys"@en, "nombre d'étages"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:range  xsd:nonNegativeInteger .
+
+#################
+# Object properties #
+#################
+:hasParkingPlace  a  owl:ObjectProperty;
+    rdfs:label  "has parking place"@en, "a une place de stationnement"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  :ParkingPlace .
+
+:hasSubParkingFacility  a  owl:ObjectProperty;
+    rdfs:label  "has sub parking facility"@en, "a un sous lieu de stationnement"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  :ParkingFacility .
+
+:hasEntryPoint  a  owl:ObjectProperty;
+    rdfs:label  "has entry point"@en, "a un point d'entrée"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  topo:ElementReseauRoutier .
+
+:hasExitPoint  a  owl:ObjectProperty;
+    rdfs:label  "has exit point"@en, "a un point de sortie"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  topo:ElementReseauRoutier .
+
+:hasOffer  a  owl:ObjectProperty;
+    rdfs:label  "has offer"@en, "a une offre"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:range  gr:Offering .
+
+:hasParkingManager  a  owl:ObjectProperty;
+    rdfs:label  "has parking manager"@en, "a un gestionnaire de lieu de stationnement"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:domain  :ParkingFacility;
+    rdfs:range  gr:BusinessEntity .
+    
+:hasParkingOwner  a  owl:ObjectProperty;
+    rdfs:label  "has parking owner"@en, "a un propriétaire de lieu de stationnement"@fr;
+    rdfs:comment  ""@en, ""@fr;
+    rdfs:subPropertyOf  [ owl:inverseOf  gr:owns ];
+    rdfs:domain :ParkingFacility .
+    
+##########
+# Classes #
+##########
+# Declare externally defined classes
+geo:SpacialThing  a  owl:Class .
+topo:ElementReseauRoutier  a  owl:Class .
+
+:ParkingFacility  a  owl:Class;
+    rdfs:label  "parking facility"@en, "lieu de stationnement"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  geo:SpatialThing .
+    
+:CarParkingFacility  a  owl:Class;
+    rdfs:label "car parking facility"@en, "parc de stationnement de voitures"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:TruckParkingFacility  a  owl:Class;
+    rdfs:label "truck parking facility"@en, "parc de stationnement de camions"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:MotorcycleParkingFacility  a  owl:Class;
+    rdfs:label "motorcycle parking facility"@en, "installation de stationnement de motos"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:BicycleParkingFacility  a  owl:Class;
+    rdfs:label "bicycle parking facility"@en, "installation de stationnement de vélos"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:SingleStoreyParkingFacility  a  owl:Class;
+    rdfs:label "single storey parking facility"@en, "parc de stationnement à un étage"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:MultiStoreyParkingFacility  a  owl:Class;
+    rdfs:label "multi-storey parking facility"@en, "parc de stationnement à plusieurs étages"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingFacility .
+
+:BicycleSharingStation  a  owl:Class;
+    rdfs:label "bicycle sharing station"@en, "station de vélos en libre-service"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :BicyckeParkingFacility .
+
+:CarSharingStation  a  owl:Class;
+    rdfs:label "car sharing station"@en, "station de voitures en libre-service"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :CarParkingFacility .
+
+:ParkingPlace  a  owl:Class;
+   rdfs:label "parking place"@en, "place de stationnement"@fr;
+   rdfs:comment ""@en, ""@fr;
+   rdfs:subClassOf   geo:SpatialThing .
+
+:DisabledParkingPlace  a  owl:Class;
+    rdfs:label  "disabled parking place"@en, "place de stationnement pour handicapé"@fr;
+    rdfs:comment ""@en, ""@fr;
+    rdfs:subClassOf  :ParkingPlace .
+
+############
+# Individuals #
+############
+<http://zimmer.aprilfoolsreview.com/antoine#me>  a  foaf:Person .
+<http://nooranibakerally.com/#me>  a  foaf:Person .

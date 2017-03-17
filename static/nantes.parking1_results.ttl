@@ -1,0 +1,232 @@
+@base          <http://example.org/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn:    <http://w3id.org/sparql-generate/fn/> .
+@prefix iter:  <http://w3id.org/sparql-generate/iter/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pk:    <http://opensensingcity.emse.fr/ontologies/parking/> .
+@prefix ts:    <http://opensensingcity.emse.fr/ontologies/tempstatus> .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3554>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "CHATEAU" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  42 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4320>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "FEYDEAU" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  213 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1043>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "ARISTIDE BRIAND" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  33 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/299>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "TOUR DE BRETAGNE" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  293 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/280>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE NORD" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  277 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3652>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "CATHEDRALE" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  199 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4073>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GLORIETTE 2" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  54 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/677>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "COMMERCE" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  252 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3951>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "LES MACHINES" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  100 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3651>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "C.H.U" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  47 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1046>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "TALENSAC" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  117 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4072>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "CHANTIERS NAVALS" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  46 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3551>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "BACO-LU 2" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  31 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/284>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "DECRE-BOUFFAY" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  236 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3549>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GLORIETTE 1" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  30 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3989>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE SUD 4" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  246 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3650>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "BELLAMY" ;
+        ts:hasAvailability  [ a                       pk:FullParking , ts:Availability ;
+                              pk:nbOfAvailablePlaces  0 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1045>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE SUD 1" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  61 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3550>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "HOTEL DIEU" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  12 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3990>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "VIVIANI" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  117 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3589>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE SUD 2" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  70 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3555>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE SUD 3" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  476 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4142>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "BACO-LU 1" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  52 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1044>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "CITE INT DES CONGRES" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  110 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/288>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GRASLIN" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  47 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/134>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "MEDIATHEQUE" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  150 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4319>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "LES FONDERIES" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  78 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3590>
+        a                   pk:ParkingFacility ;
+        rdfs:label          "GARE SUD 2 LIMITE 1 HEURE" ;
+        ts:hasAvailability  [ a                       ts:Availability ;
+                              pk:nbOfAvailablePlaces  22 ;
+                              ts:time                 "2017-03-17T11:17:40"^^xsd:dateTime
+                            ] .

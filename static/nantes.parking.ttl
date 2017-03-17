@@ -1,0 +1,207 @@
+<http://opensensingcity.emse.fr/nantes/parkings/3551>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Baco-LU 2 côté CHU" ;
+        pk:nbCarParkingPlaces  122 ;
+        geo:lat                47.2131396216508e0 ;
+        geo:long               -1.55158577102779e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4072>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Chantiers Navals" ;
+        pk:nbCarParkingPlaces  104 ;
+        geo:lat                47.2082779238052e0 ;
+        geo:long               -1.5688965152375598e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3650>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Bellamy" ;
+        pk:nbCarParkingPlaces  78 ;
+        geo:lat                47.2223488563388e0 ;
+        geo:long               -1.55767525973842e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/288>
+        a                             pk:ParkingFacility , pk:MotorcycleParkingFacility , pk:BicycleParkingFacility , pk:ParkingPlace ;
+        rdfs:label                    "Parking Graslin" ;
+        pk:nbBicycleParkingPlaces     27 ;
+        pk:nbCarParkingPlaces         515 ;
+        pk:nbMotorcycleParkingPlaces  6 ;
+        geo:lat                       47.2142987567009e0 ;
+        geo:long                      -1.56255305030231e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4319>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Les Fonderies" ;
+        pk:nbCarParkingPlaces  120 ;
+        geo:lat                47.2049593025141e0 ;
+        geo:long               -1.54431447878588e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1043>
+        a                             pk:ParkingPlace , pk:MotorcycleParkingFacility , pk:ParkingFacility ;
+        rdfs:label                    "Parking Aristide Briand" ;
+        pk:nbCarParkingPlaces         307 ;
+        pk:nbMotorcycleParkingPlaces  10 ;
+        geo:lat                       47.2170821009681e0 ;
+        geo:long                      -1.56291771065161e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3550>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Hôtel Dieu" ;
+        pk:nbCarParkingPlaces  104 ;
+        geo:lat                47.2110457617682e0 ;
+        geo:long               -1.5519645648396299e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4142>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Baco-LU 1 côté gare" ;
+        pk:nbCarParkingPlaces  114 ;
+        geo:lat                47.2143210599208e0 ;
+        geo:long               -1.54897044372895e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/134>
+        a                             pk:ParkingFacility , pk:MotorcycleParkingFacility , pk:BicycleParkingFacility , pk:ParkingPlace ;
+        rdfs:label                    "Parking Médiathèque" ;
+        pk:nbBicycleParkingPlaces     82 ;
+        pk:nbCarParkingPlaces         447 ;
+        pk:nbMotorcycleParkingPlaces  20 ;
+        geo:lat                       47.2108594337811e0 ;
+        geo:long                      -1.5623193318229e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3555>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Gare Sud 3" ;
+        pk:nbCarParkingPlaces  468 ;
+        geo:lat                47.216124541616004e0 ;
+        geo:long               -1.5378767964857e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/280>
+        a                             pk:ParkingPlace , pk:ParkingFacility , pk:MotorcycleParkingFacility , pk:BicycleParkingFacility ;
+        rdfs:label                    "Parking Gare Nord" ;
+        pk:nbBicycleParkingPlaces     359 ;
+        pk:nbCarParkingPlaces         597 ;
+        pk:nbMotorcycleParkingPlaces  10 ;
+        geo:lat                       47.216677664393394e0 ;
+        geo:long                      -1.5449661174176998e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3589>
+        a                          pk:ParkingPlace , pk:BicycleParkingFacility , pk:ParkingFacility ;
+        rdfs:label                 "Parking Gare Sud 2" ;
+        pk:nbBicycleParkingPlaces  288 ;
+        pk:nbCarParkingPlaces      279 ;
+        geo:lat                    47.2142227295522e0 ;
+        geo:long                   -1.5413252030463798e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4320>
+        a                             pk:ParkingFacility , pk:ParkingPlace , pk:BicycleParkingFacility , pk:MotorcycleParkingFacility ;
+        rdfs:label                    "Parking Feydeau" ;
+        pk:nbBicycleParkingPlaces     20 ;
+        pk:nbCarParkingPlaces         523 ;
+        pk:nbMotorcycleParkingPlaces  20 ;
+        geo:lat                       47.214063918722005e0 ;
+        geo:long                      -1.55254029256441e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3951>
+        a                             pk:ParkingFacility , pk:MotorcycleParkingFacility , pk:BicycleParkingFacility , pk:ParkingPlace ;
+        rdfs:label                    "Parking Les Machines" ;
+        pk:nbBicycleParkingPlaces     64 ;
+        pk:nbCarParkingPlaces         621 ;
+        pk:nbMotorcycleParkingPlaces  19 ;
+        geo:lat                       47.2058893110449e0 ;
+        geo:long                      -1.56270881463759e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3554>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Château" ;
+        pk:nbCarParkingPlaces  118 ;
+        geo:lat                47.216978560512004e0 ;
+        geo:long               -1.5478321602264398e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1046>
+        a                             pk:ParkingPlace , pk:BicycleParkingFacility , pk:MotorcycleParkingFacility , pk:ParkingFacility ;
+        rdfs:label                    "Parking Talensac" ;
+        pk:nbBicycleParkingPlaces     43 ;
+        pk:nbCarParkingPlaces         376 ;
+        pk:nbMotorcycleParkingPlaces  6 ;
+        geo:lat                       47.220244453327005e0 ;
+        geo:long                      -1.55833879735858e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3652>
+        a                             pk:ParkingPlace , pk:ParkingFacility , pk:BicycleParkingFacility , pk:MotorcycleParkingFacility ;
+        rdfs:label                    "Parking Cathédrale" ;
+        pk:nbBicycleParkingPlaces     67 ;
+        pk:nbCarParkingPlaces         398 ;
+        pk:nbMotorcycleParkingPlaces  14 ;
+        geo:lat                       47.220801861789596e0 ;
+        geo:long                      -1.55103788136424e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/284>
+        a                             pk:ParkingPlace , pk:ParkingFacility , pk:MotorcycleParkingFacility , pk:BicycleParkingFacility ;
+        rdfs:label                    "Parking Decré-Bouffay" ;
+        pk:nbBicycleParkingPlaces     68 ;
+        pk:nbCarParkingPlaces         560 ;
+        pk:nbMotorcycleParkingPlaces  16 ;
+        geo:lat                       47.2166511837311e0 ;
+        geo:long                      -1.55398616335209e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/677>
+        a                             pk:MotorcycleParkingFacility , pk:ParkingFacility , pk:BicycleParkingFacility , pk:ParkingPlace ;
+        rdfs:label                    "Parking Commerce" ;
+        pk:nbBicycleParkingPlaces     100 ;
+        pk:nbCarParkingPlaces         534 ;
+        pk:nbMotorcycleParkingPlaces  2 ;
+        geo:lat                       47.2131088858447e0 ;
+        geo:long                      -1.55769456092052e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3590>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Gare Sud 2 limité 1h" ;
+        pk:nbCarParkingPlaces  33 ;
+        geo:lat                47.2151907897565e0 ;
+        geo:long               -1.54265695152768e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/299>
+        a                             pk:MotorcycleParkingFacility , pk:ParkingPlace , pk:ParkingFacility , pk:BicycleParkingFacility ;
+        rdfs:label                    "Parking Tour Bretagne" ;
+        pk:nbBicycleParkingPlaces     85 ;
+        pk:nbCarParkingPlaces         668 ;
+        pk:nbMotorcycleParkingPlaces  15 ;
+        geo:lat                       47.217831409543095e0 ;
+        geo:long                      -1.55823146051339e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3549>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Gloriette 1" ;
+        pk:nbCarParkingPlaces  172 ;
+        geo:lat                47.211168283897e0 ;
+        geo:long               -1.55842000294468e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3989>
+        a                             pk:ParkingFacility , pk:ParkingPlace , pk:BicycleParkingFacility , pk:MotorcycleParkingFacility ;
+        rdfs:label                    "Parking Gare Sud 4" ;
+        pk:nbBicycleParkingPlaces     50 ;
+        pk:nbCarParkingPlaces         435 ;
+        pk:nbMotorcycleParkingPlaces  10 ;
+        geo:lat                       47.2150920668916e0 ;
+        geo:long                      -1.5379158382815599e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/4073>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking Gloriette 2" ;
+        pk:nbCarParkingPlaces  108 ;
+        geo:lat                47.210262318400304e0 ;
+        geo:long               -1.56026556801403e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/3651>
+        a                      pk:ParkingPlace , pk:ParkingFacility ;
+        rdfs:label             "Parking CHU 1" ;
+        pk:nbCarParkingPlaces  148 ;
+        geo:lat                47.2093506399549e0 ;
+        geo:long               -1.5572314966665701e0 .
+
+<http://opensensingcity.emse.fr/nantes/parkings/1044>
+        a                             pk:MotorcycleParkingFacility , pk:ParkingFacility , pk:ParkingPlace , pk:BicycleParkingFacility ;
+        rdfs:label                    "Parking Cité des Congrès" ;
+        pk:nbBicycleParkingPlaces     29 ;
+        pk:nbCarParkingPlaces         430 ;
+        pk:nbMotorcycleParkingPlaces  4 ;
+        geo:lat                       47.212890369623395e0 ;
+        geo:long                      -1.54395299924534e0 .
