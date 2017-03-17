@@ -42,7 +42,12 @@ def main():
     #     print type(row.parking)
     print "For"
     for s,p,o in graph.triples((None,RDF.type,pk.ParkingPlace)):
-        print "%s is a parking"%s
+        for triple in graph.triples((s,None,None)):
+            print triple
+        #print "%s is a parking"%s
+        #print "%s is a %s"%(s,o)
+        
+
 
     #    print type(row.predicat)
     #    print(row.objet)
